@@ -7,3 +7,12 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+* {
+    /*  makes it so that it doesn't break your layout or go over 100%. Browser recalculates the width*/
+        box-sizing: border-box;
+}
+
+a {
+    color: $mainOrange;
+}

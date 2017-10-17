@@ -1,5 +1,25 @@
 @import "normalize.css";
-@import "base/_global";
 @import "base/_variables";
+@import "base/_mixins";
+@import "base/_global";
 @import "modules/_large-hero";
 @import "modules/_btn";
+@import "modules/_wrapper";
+@import "modules/_page-section";
+@import "modules/_headline";
+@import "modules/_row";
+@import "modules/_generic-content-container";
+
+/*
+Media Query Sizes for responsive design
+@media (min-width: 530px) {
+    
+}
+
+@media (min-width: 800px) {
+    
+}
+
+@media (min-width: 1200px) {
+    
+}*/
