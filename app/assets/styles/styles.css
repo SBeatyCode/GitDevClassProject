@@ -11,6 +11,7 @@
 @import "modules/_generic-content-container";
 @import "modules/_section-title";
 @import "modules/_feature-item";
+@import "modules/_testimonial";
 
 /*
 Media Query Sizes for responsive design
@@ -22,6 +23,6 @@ Media Query Sizes for responsive design
     
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1010px) {
     
 }*/

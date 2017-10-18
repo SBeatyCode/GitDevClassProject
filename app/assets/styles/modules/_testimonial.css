@@ -1,0 +1,45 @@
+.testimonial {
+    background-color: rgba(255, 255, 255, .8);
+    padding: 0 18px 1px 18px;
+    margin-bottom: 98px;
+    
+    @media (min-width: 1010px) {
+        margin-bottom: 0;
+        padding: 0 1.8125rem 1px 1.8125rem;
+    }
+    
+    &__photo {
+/*        size of border radius is half the width of the image so it'll be a perfect circle'*/
+        border-radius: 80px;
+        overflow: hidden;
+/*        give the width and height the same value as the containing div or the circle effect doesn't work'*/
+        width: 160px;
+        height: 160px;
+        margin: 0 auto -80px auto;
+        position: relative;
+/*        top is half height because we want half the circle to violate the div*/
+/*        also set bottom margin to -80 because otherwise there's a 80px space where the img was pulled up'*/
+        top: -80px;
+        border: 6px solid rgba(255, 255, 255, .8);
+    }
+    
+    &__title {
+        color: $mainBlue;
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: 500;
+        margin: 0;
+    }
+    
+    &__subtitle {
+        color: $mainOrange;
+        text-align: center;
+        font-weight: 400;
+        font-size: .9375rem;
+        margin: .25rem 0 1rem 0;
+    }
+    
+    &--last {
+        margin-bottom: 0;
+    }
+}

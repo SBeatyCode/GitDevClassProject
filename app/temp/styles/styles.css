@@ -597,6 +597,32 @@ a {
         padding-right: 0;
     }
 
+.wrapper--no-padding-until-medium {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+@media (min-width: 800px) {
+
+.wrapper--no-padding-until-medium {
+            padding-left: 18px;
+            padding-right: 18px
+    }
+        }
+
+.wrapper--no-padding-until-large {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+@media (min-width: 1010px) {
+
+.wrapper--no-padding-until-large {
+            padding-left: 18px;
+            padding-right: 18px
+    }
+        }
+
 .page-section {
     
     padding: 1.2rem 0;
@@ -613,6 +639,40 @@ a {
         background-color: #275572;
         color: #FFF;
     }
+
+.page-section__testimonials {
+        background-color: #e0e6ef;
+    }
+
+@media (min-width: 1010px) {
+
+.page-section__testimonials {
+            background: url('/assets/images/testimonials-bg.jpg') top center no-repeat;
+            background-size: cover
+    }
+        }
+
+.page-section--no-b-padding-until-medium {
+        padding-bottom: 0;
+    }
+
+@media (min-width: 800px) {
+
+.page-section--no-b-padding-until-medium {
+            padding: 4.5rem 0
+    }
+        }
+
+.page-section--no-b-padding-until-large {
+        padding-bottom: 0;
+    }
+
+@media (min-width: 1010px) {
+
+.page-section--no-b-padding-until-large {
+            padding: 4.5rem 0
+    }
+        }
 
 .headline {
     font-weight: 300;
@@ -679,6 +739,14 @@ a {
         padding-right: -65px;
     }
 
+.row--gutters-small {
+        padding-right: -45px;
+    }
+
+.row--gutters-small > div {
+        padding-right: 45px;
+    }
+
 .row--gutters-large {
         padding-right: -100px;
     }
@@ -693,6 +761,10 @@ a {
 
 .row__b-margin-until-medium {
         margin-bottom: 1rem;
+    }
+
+.row--t-padding {
+        padding-top: 80px;
     }
 
 @media (min-width: 800px) {
@@ -723,6 +795,69 @@ a {
             width: 63%;
         }
     }
+
+@media (min-width: 1010px) {
+        .row__b-margin-until-large {
+            margin-bottom: 0;
+        }
+        
+        .row__large-4 {
+            float: left;
+            width: 33.33%;
+        }
+        
+        .row__large-4-larger {
+            width: 37%;
+        }
+        
+        .row__large-6 {
+            float: left;
+            width: 50%;
+        }
+
+        .row__large-8 {
+            float: left;
+            width: 66.66%;
+        }
+
+        .row__large-8-smaller {
+            width: 63%;
+        }
+    }
+
+/*    equal height rules*/
+
+@media (min-width: 800px) {
+
+.row--equal-height-at-medium {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex
+    }
+        }
+
+.row--equal-height-at-medium > div {
+            float: none;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+        }
+
+@media (min-width: 1010px) {
+
+.row--equal-height-at-large {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex
+    }
+        }
+
+.row--equal-height-at-large > div {
+            float: none;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+        }
 
 .generic-content-container p {
         font-weight: 300;
@@ -768,12 +903,18 @@ a {
 @media (min-width: 530px) {
 
 .section-title__icon {
+            position: relative;
+            top: 8px;
             margin-right: .5rem;
             margin-left: 0;
             margin-bottom: 0;
             display: inline-block
     }
         }
+
+.section-title--blue {
+        color: #275572;
+    }
 
 .feature-item {
     position: relative;
@@ -817,6 +958,55 @@ a {
     }
         }
 
+.testimonial {
+    background-color: rgba(255, 255, 255, .8);
+    padding: 0 18px 1px 18px;
+    margin-bottom: 98px;
+}
+
+@media (min-width: 1010px) {
+
+.testimonial {
+        margin-bottom: 0;
+        padding: 0 1.8125rem 1px 1.8125rem
+}
+    }
+
+.testimonial__photo {
+/*        size of border radius is half the width of the image so it'll be a perfect circle'*/
+        border-radius: 80px;
+        overflow: hidden;
+/*        give the width and height the same value as the containing div or the circle effect doesn't work'*/
+        width: 160px;
+        height: 160px;
+        margin: 0 auto -80px auto;
+        position: relative;
+/*        top is half height because we want half the circle to violate the div*/
+/*        also set bottom margin to -80 because otherwise there's a 80px space where the img was pulled up'*/
+        top: -80px;
+        border: 6px solid rgba(255, 255, 255, .8);
+    }
+
+.testimonial__title {
+        color: #275572;
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: 500;
+        margin: 0;
+    }
+
+.testimonial__subtitle {
+        color: #d59541;
+        text-align: center;
+        font-weight: 400;
+        font-size: .9375rem;
+        margin: .25rem 0 1rem 0;
+    }
+
+.testimonial--last {
+        margin-bottom: 0;
+    }
+
 /*
 Media Query Sizes for responsive design
 @media (min-width: 530px) {
@@ -827,6 +1017,6 @@ Media Query Sizes for responsive design
     
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1010px) {
     
 }*/
