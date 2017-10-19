@@ -1,4 +1,4 @@
-//var $ = require('jquery');
+var $ = require('jquery');
 //var Person = require('./modules/Person');
 import Person from './modules/Person';
 
