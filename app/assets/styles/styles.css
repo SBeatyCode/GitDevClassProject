@@ -13,6 +13,8 @@
 @import "modules/_feature-item";
 @import "modules/_testimonial";
 @import "modules/_footer";
+@import "modules/_header";
+@import "modules/_primary-nav";
 /*css style sheet/sprite sheet being generated/moved/renamed by the gulp svg-sprite and rename plugins*/
 @import "modules/_sprite";
 

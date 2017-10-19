@@ -8,6 +8,8 @@
   }
 
   &__text-content {
+/*    to offset the height of the navbar so it still 'looks' centered properly*/
+    padding-top: 60px;
     /*puts content in top left corner of the parent div*/
     position: absolute;
     top: 50%;

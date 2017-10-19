@@ -481,6 +481,8 @@ a {
   }
 
 .large-hero__text-content {
+/*    to offset the height of the navbar so it still 'looks' centered properly*/
+    padding-top: 60px;
     /*puts content in top left corner of the parent div*/
     position: absolute;
     top: 50%;
@@ -1028,6 +1030,106 @@ a {
             margin-right: 1.4rem
     }
         }
+
+.site-header {
+    padding: 10px 0;
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+}
+
+@media (min-width: 800px) {
+
+.site-header {
+        background-color: rgba(39,85,114, .3)
+}
+    }
+
+.site-header__btn-container {
+        float: right;
+    }
+
+.site-header__logo {
+        position: absolute;
+/*        resets the top of the logo to the top, to sounteract the padding from the main site-header*/
+        top: 0;
+        left: 50%;
+/*       
+        pull the logo back by half of its own width and itll be centered again - left being used to pull it right (positive vals are left negative are right)
+        
+        slightly shrink the logo to .8 it's usual size, and reset the origin so that there isn't a space above it (aka tellingit that it's point of origin is at the center top part of the element)
+*/
+        -webkit-transform: translateX(-50%) scale(.8);
+                transform: translateX(-50%) scale(.8);
+        -webkit-transform-origin: 50% 0%;
+                transform-origin: 50% 0%;
+        background-color: #275572;
+        padding: 25px 36px;
+    }
+
+@media (min-width: 800px) {
+
+.site-header__logo {
+            left: auto;
+            -webkit-transform: translateX(0);
+                    transform: translateX(0)
+    }
+        }
+
+.site-header__menu-content {
+        display: none;
+    }
+
+@media (min-width: 800px) {
+
+.site-header__menu-content {
+            display: block
+    }
+        }
+
+.site-header__menu-icon {
+        width: 20px;
+        height: 20px;
+        background-color: #FFF;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+
+@media (min-width: 800px) {
+
+.site-header__menu-icon {
+            display: none
+    }
+        }
+
+.primary-nav ul {
+        margin: 0;
+        padding: 0;
+    }
+
+.primary-nav ul::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+.primary-nav li {
+        list-style: none;
+        float: left;
+        padding-right: 20px;
+    }
+
+.primary-nav a {
+        text-decoration: none;
+        color: #FFF;
+        font-weight: 300;
+    }
+
+.primary-nav--pull-right {
+        float: right;
+        padding: 12px 0;
+    }
 
 /*css style sheet/sprite sheet being generated/moved/renamed by the gulp svg-sprite and rename plugins*/
 
