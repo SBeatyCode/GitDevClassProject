@@ -7,6 +7,11 @@
     
     @media (min-width: 800px) {
         background-color: rgba($mainBlue, .3);
+        position: fixed;
+        
+        &--dark {
+            background-color: rgba(23, 51, 72, .85);
+        }
     }
     
     &__btn-container {
@@ -30,10 +35,15 @@
         transform-origin: 50% 0%;
         background-color: $mainBlue;
         padding: 25px 36px;
+        transition: transform .3s ease-out;
 
         @media (min-width: 800px) {
             left: auto;
             transform: translateX(0);
+            
+            .site-header--dark & {
+                transform: scale(.55);
+            }
         }
     }
     
