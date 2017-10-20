@@ -16,7 +16,8 @@
 @import "modules/_header";
 @import "modules/_primary-nav";
 @import "modules/_reveal-item";
-
+@import "modules/_modal";
+@import "modules/_social-icons";
 /*css style sheet/sprite sheet being generated/moved/renamed by the gulp svg-sprite and rename plugins*/
 @import "modules/_sprite";
 /*
