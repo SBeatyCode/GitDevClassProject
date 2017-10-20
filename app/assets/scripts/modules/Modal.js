@@ -29,7 +29,7 @@ class Modal {
     openModal() {
         this.modal.addClass("modal--is-visible");
         //prevents the default behavior of an a href=# of taking you to the top of the page
-//        return false;
+        return false;
     }
     
     closeModal() {
