@@ -652,7 +652,7 @@ a {
 
 @media (min-width: 1010px) {
             .page-section__testimonials.lazyloaded {
-                background: url('/assets/images/testimonials-bg.jpg') top center no-repeat;
+                background: url('../../assets/images/testimonials-bg.jpg') top center no-repeat;
                 background-size: cover;
             }
         }
@@ -834,14 +834,14 @@ a {
 
 @media (min-width: 800px) {
 
-.flexbox .row--equal-height-at-medium {
+.row--equal-height-at-medium {
             display: -webkit-box;
             display: -ms-flexbox;
             display: flex
     }
         }
 
-.flexbox .row--equal-height-at-medium > div {
+.row--equal-height-at-medium > div {
             float: none;
             display: -webkit-box;
             display: -ms-flexbox;
@@ -850,14 +850,14 @@ a {
 
 @media (min-width: 1010px) {
 
-.flexbox .row--equal-height-at-large {
+.row--equal-height-at-large {
             display: -webkit-box;
             display: -ms-flexbox;
             display: flex
     }
         }
 
-.flexbox .row--equal-height-at-large > div {
+.row--equal-height-at-large > div {
             float: none;
             display: -webkit-box;
             display: -ms-flexbox;
